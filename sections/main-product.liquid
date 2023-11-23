@@ -433,7 +433,7 @@
                          <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" data-option-value="{{ value }}">
                             {% for variant in product.variants %}
                               {% if variant.title contains value %}
-                                {{ variant.featured_image | img_url: '10x' | img_tag }}
+                                {{ variant.featured_image | img_url: '50x' | img_tag }}
                                 {% break %}
                               {% endif %}
                             {% endfor %}
